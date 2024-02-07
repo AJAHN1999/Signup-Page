@@ -10,11 +10,11 @@ body{
 --battleship-gray: #949494ff;
 --jet: #2C2C2Cff;
 --white: #FFFFFFff;
---red-cmyk: #DF2F26ff;
+--red-cmyk: rgb(160, 51, 45);
 --gray: #797979ff;
 
 }
-
+/* #DF2F26ff */
 .mainContainer{
     display: flex;
 }
@@ -69,7 +69,7 @@ body{
     background-color: var(--white);
     /* margin: 10px; */
     width: 100%;
-    border-radius: 30px 30px;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,16 +121,27 @@ input::placeholder{
     
 }
 
-.formFooter{
+/* .formFooter{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     padding: 10px;
-}
+} */
 .formDetails1{
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submitButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 button{
@@ -140,6 +151,19 @@ button{
     font-family: 'Roboto',sans-serif;
     border-radius: 10px;
     font-size: 17px;
+    outline: none;
+    letter-spacing: 0.02em;
+    height:2.5em;
+    width: 8em;
+}
+a{
+    color:var(--jet);
+}
+
+.formDetails1 .subscribe , .formDetails1 .terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 
 
