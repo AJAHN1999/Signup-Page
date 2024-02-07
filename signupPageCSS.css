@@ -48,7 +48,7 @@ body{
     width: 30em;
     height: 40em;
     box-sizing: border-box;
-    border: 2px solid var(--white);
+    border: 2px solid var(--red-cmyk);
     border-radius: 30px;
     display: flex;
     justify-content:space-between;
@@ -56,18 +56,19 @@ body{
     align-items: center;
     box-sizing: border-box;
     padding: 5px;
+    background-color:rgb(236, 214, 184);
     
 }
 .formHeading h1{
     padding: 2px;
     font-size: 1.5em;
     font-family: 'Roboto',sans-serif;
-    color: var(--red-cmyk);
+    color: var(--white);
     
 }
 
 .formHeading{
-    background-color: var(--white);
+    background-color: var(--red-cmyk);
     /* margin: 10px; */
     width: 100%;
     border-radius: 25px;
@@ -103,21 +104,25 @@ body{
     
 
 input {
-    background-color: var(--red-cmyk);
+    background-color: var(--white);
     border: none;
     font-family: 'Roboto',sans-serif;
     font-size: 15px;
-    border-bottom: 1px solid var(--white);
+    border: 1px solid var(--white);
     transition: all .5s ease-in;
-    color: var(--white);
+    color: var(--red-cmyk);
+    height: 60%;
+    border-radius: 10px;
 }
 
 label{
     font-family: 'Roboto',sans-serif;
+    color:var(--red-cmyk);
+    font-size: 75%;
 }
 
 input::placeholder{
-    color:var(--white);
+    color:var(--red-cmyk);
     font-size: 10px;
     
 }
@@ -138,8 +143,8 @@ input::placeholder{
 }
 
 button{
-    background-color: var(--white);
-    color:var(--red-cmyk);
+    background-color: var(--red-cmyk);
+    color:var(--white);
     border: 1px solid var(--jet);
     font-family: 'Roboto',sans-serif;
     border-radius: 10px;
@@ -148,15 +153,40 @@ button{
     letter-spacing: 0.02em;
     height:2.5em;
     width: 8em;
+
 }
 a{
     color:var(--jet);
 }
 
-.formDetails1 .subscribe , .formDetails1 .terms{
+.formDetails1 .subscribe , .terms{
     display: flex;
     justify-content: center;
     align-items: center;    
+    color:var(--red-cmyk);
+}
+.LoginText{
+    color:var(--red-cmyk);
+}
+
+.detailsPasswordConfirmation{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
+.error{
+    color:var(--red-cmyk);
+    font-size: 70%;
+    display: none;;
+
+}
+
+input:invalid{
+    border-color: rgb(255, 0, 0);
+}
+
+input:valid{
+    border-color:green;
 }
 
 
